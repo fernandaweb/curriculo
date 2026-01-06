@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/* Estilos para Tablets e Desktops (a partir de 768px de largura) */
+@media screen and (min-width: 768px) {
+    .container {
+        flex-direction: row; /* Itens em linha (lado a lado) no desktop */
+        justify-content: space-around;
+    }
+
+    .item {
+        width: 30%; /* Largura flexível para caber lado a lado */
+        margin-bottom: 0;
+    }
+}
