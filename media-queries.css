@@ -11,4 +11,22 @@
         width: 30%; /* Largura flexível para caber lado a lado */
         margin-bottom: 0;
     }
+
+/* Layout Desktop (padrão) */
+.menu { display: flex; }
+.hamburger { display: none; }
+
+/* Layout Mobile (telas menores que 768px) */
+@media (max-width: 768px) {
+  .menu { display: none; } /* Esconde o menu desktop */
+  .hamburger { display: block; } /* Mostra o botão */
 }
+
+/* Garanta que ao redimensionar para > 768px o menu reapareça */
+@media (min-width: 769px) {
+  .menu { display: flex !important; } 
+  .hamburger { display: none; }
+}
+
+}
+
