@@ -1,5 +1,12 @@
+:root {
+  --blue: #00a2ff;
+  --black: #000000;
+  --white: #ffffff;
+}
+
 html, body {
   height: 100%; /* Garante que html e body ocupem a altura total */
+  background-color: var(--blackground);
 }
 
 body {
@@ -14,6 +21,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  color: var(--color);
 }
 
 /* Header */
@@ -26,7 +34,7 @@ body {
 
 /* Navbar */
 .navbar {
-  background: #000000;
+  background: var(--black);
   height: 40px;
   display: flex;
   align-items: center;
@@ -42,14 +50,14 @@ body {
 }
 
 .menu a {
-  color: #fff;
+  color: var(--white);
   text-decoration: none;
   font-size: 16px;
   transition: opacity 0.3s;
 }
 
 .menu a:hover {
-  color: rgb(0, 255, 213);
+  color: var(--blue);
 }
 
 /* Hamburger */
@@ -65,7 +73,7 @@ body {
 .hamburger span {
   width: 28px;
   height: 3px;
-  background: #fff;
+  background: var(--white);
 }
 
 p
@@ -102,8 +110,9 @@ h4
     cursor: pointer; /* Muda o cursor para uma mãozinha */
     text-decoration: none; /* Remove sublinhado de links */
     transition: background-color 0.3s ease; /* Transição suave */
-    color: white; /* Cor do texto */
     display: inline-block; /* Para links funcionarem bem */
+    color: var(--white);
+    background-color: var(--black);
   }
 
   .button-container {
@@ -113,21 +122,23 @@ h4
 
 /* Estilo para o botão de "Saiba Mais" */
 .saiba-mais {
-    background-color: #001d5c; /* Azul */
+    background-color: var(--black);
+    color: var(--white);
 }
 
 /* Efeito ao passar o mouse (hover) */
 .saiba-mais:hover {
-    background-color: #002955; /* Azul mais escuro */
+    background-color: var(--blue);
+    color: var(--black);
 }
 
 /* Estilo específico para o link-btn, se necessário */
 .link-btn {
-    background-color: #00195e; /* Verde para o link-btn */
+    background-color: var(--black); /* Preto */
 }
 
 .link-btn:hover {
-    background-color: #000000; /* Verde mais escuro */
+    background-color: var(--blue); /* Azul mais escuro */
 }
 
 /* formacoes */
@@ -189,8 +200,8 @@ table {
 
 /* Footer */
 .footer {
-  background: #000;
-  color: #fff;
+  background: var(--black);
+  color: var(--white);
   text-align: center;
   padding: 15px 0;
   position: relative;
@@ -207,7 +218,7 @@ table {
     top: 0px;
     left: 0;
     width: 100%;
-    background: #000;
+    background: var(--black);
     flex-direction: column;
     align-items: center;
     gap: 0;
@@ -232,4 +243,14 @@ table {
   .hamburger {
     display: flex;
   }
+}
+
+.light-theme {
+  background: var(--white);
+  color: var(--black);
+}
+
+.dark-theme {
+  background: var(--black);
+  color: var(--white);
 }
