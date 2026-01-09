@@ -176,6 +176,17 @@ table {
   margin-right: auto;
 }
 
+.table-container {
+  overflow-x: auto;
+}
+
+.formulario-contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px 50px 20px;
+}
+
 /* Footer */
 .footer {
   background: #000;
